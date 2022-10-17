@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Final SheCodes Basic Project</title>
+    <style>
+      body {
+        background: #f9f7fe;
+      }
+      h1 {
+        color: rgb(0, 0, 0);
+        font-size: 40px;
+        font-weight: lighter;
+        text-decoration: none;
+        text-align: center;
+        font-style: italic;
+        font-family: Georgia, Times, "Times New Roman", serif;
+      }
+
+      h2 {
+        color: #000000;
+        font-style: italic;
+        font-size: 18px;
+        text-align: center;
+        font-family: Georgia, Times, "Times New Roman", serif;
+      }
+      h3 {
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-family: "Gill Sans", sans-serif;
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: 18px;
+      }
+      h4 {
+        font-family: "Gill Sans", sans-serif;
+        text-align: justify;
+        font-size: 16px;
+        font-weight: lighter;
+        letter-spacing: 1px;
+      }
+      p {
+        font-family: "Gill Sans", sans-serif;
+        text-align: justify;
+        font-size: 16px;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        padding: 5px 60px 5px 60px;
+      }
+
+      .container {
+        display: block;
+        background: white;
+        margin: 20px auto;
+        width: 800px;
+        box-shadow: 0px 30px 50px rgb(65 50 100 / 8%);
+        border-radius: 5px;
+      }
+
+      .header {
+        text-align: center;
+        background: rgb(158, 192, 255);
+        color: #fff;
+        font-family: "Gill Sans", sans-serif;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        padding: 20px 15px;
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/112/original/header.png?1645825143);
+        background-size: 100% 100%;
+      }
+
+      .primary-text {
+        font-family: "Gill Sans", sans-serif;
+        text-align: center;
+        font-size: 16px;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        padding-bottom: 20px;
+      }
+
+      .primaryimage {
+        display: block;
+        margin: 0 auto;
+        border-radius: 0px;
+        max-width: 800px;
+      }
+
+      .content-box-one,
+      .content-box-two,
+      .content-box-three,
+      .content-box-four {
+        display: flex;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .content-box-one-text,
+      .content-box-three-text,
+      .content-box-two-text,
+      .content-box-four-text {
+        font-family: "Gill Sans", sans-serif;
+        font-size: 18px;
+        padding: 5px 50px 10px 50px;
+      }
+
+      .content-box-five,
+      .content-box-six,
+      .content-box-seven {
+        display: inline-block;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+        margin: 5px 6px 10px 15px;
+      }
+
+      .content-box-five-text,
+      .content-box-six-text,
+      .content-box-seven-text {
+        font-family: "Gill Sans", sans-serif;
+        text-align: center;
+        font-size: 18px;
+        padding: 30px 10px 30px 5px;
+      }
+
+      .bloglink {
+        color: #000000;
+        font-style: italic;
+        font-size: 16px;
+        text-align: center;
+        font-family: Georgia, Times, "Times New Roman", serif;
+        font-weight: lighter;
+      }
+      .bloglink:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: rgb(158, 192, 255);
+      }
+      .footer {
+        padding: 20px 20px 10px 20px;
+        letter-spacing: 1px;
+        font-size: 15px;
+        text-align: center;
+        color: #fff;
+        font-weight: lighter;
+        font-family: "Gill Sans", sans-serif;
+        background: rgb(158, 192, 255);
+        letter-spacing: 1px;
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/569/original/Footerbanner_%281%29.png?1646427807);
+        background-size: 100% 100%;
+      }
+      .footerlink {
+        color: #fff;
+        text-decoration: none;
+      }
+      .footerlink:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      button {
+        background: transparent;
+        color: white;
+        display: block;
+        border: 1px solid #fff;
+        border-radius: 3px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        font-size: 18px;
+        font-family: "Gill Sans", sans-serif;
+        font-weight: lighter;
+        letter-spacing: 4px;
+        line-height: 22px;
+        margin: 20px auto;
+        padding: 20px 30px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: white;
+        color: rgb(158, 192, 255);
+        cursor: pointer;
+      }
+
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .socials {
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        padding: 15px 10px 0px 10px;
+      }
+
+      .hr {
+        background-color: rgb(158, 192, 255);
+        height: 3px;
+        border: none;
+        margin: 0px 50px 30px 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        Travel Photography changes the way we see the world
+      </div>
+      <h1>Why I Love Travel Photography</h1>
+      <div class="primary-text">
+        There is a magic in travel photography,<br />
+        that I think everyone should experience at least once in their life.
+      </div>
+      <hr class="hr" />
+      <img
+        class="primaryimage"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/374/original/valetta.jpeg?1646161671"
+      />
+      <p>
+        Living in today’s society we often forget the things that matter most in
+        life, like caring for one another & taking care of our beautiful planet
+        earth. The best way to remind myself is to go wandering and exploring
+        around the globe. Every single time I visit a new place, I just realise
+        that there is so much that I still need to learn and that there are way
+        more things I should be grateful for in life. I can feel it changing &
+        humbling me in very small but significant ways.
+      </p>
+      <p>
+        Travel photography takes you on a personal growth journey, it is all
+        about bringing our world to people and exposing them to what else is out
+        there. It’s about educating people about the customs of other cultures,
+        showing them how they are similar or different from their own. P.S. All
+        the pictures on this page were taken with my Canon EOS 1200D, I hope you
+        enjoy them!
+      </p>
+      <br />
+      <hr class="hr" />
+      <h2>4 Reasons Why Travel Photography Is So Rewarding</h2>
+      <br />
+      <hr class="hr" />
+      <div class="content-box-one">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/416/original/sanrafaelnayobaez1.jpeg?1646240595"
+          alt="text"
+          width="340"
+        />
+        <span class="content-box-one-text">
+          <h2>Reason #1</h2>
+          <h3>
+            You will develop a deep love <br />
+            and respect for this planet
+          </h3>
+          <h4>
+            It’s very easy to take this world for granted. It’s not like we try
+            to, but we rarely take the time to get out there and see the world
+            outside of our cities and busy routine. Photographing this magical
+            planet, helps you to be more aware of your surroundings and to fully
+            understand the importance of respecting and protecting it.
+          </h4>
+        </span>
+      </div>
+      <br />
+      <div class="content-box-two">
+        <span class="content-box-two-text">
+          <h2>Reason #2</h2>
+          <h3>
+            You get to revisit your best <br />
+            memories time and time again
+          </h3>
+          <h4>
+            By capturing your wanderful moments into eternity, you can go back
+            in time and warm up your heart. Revisit and relive those memories
+            that are worth remembering, those moments that you have shared and
+            the lessons that you have learned. You can go back to the sights,
+            the sounds and even the smells.
+          </h4>
+        </span>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/421/original/sanrafaelnayobaez5.jpeg?1646242121"
+          alt="text"
+          width="340"
+        />
+      </div>
+      <br />
+      <div class="content-box-three">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/420/original/IMG_8735.JPG?1646241704"
+          alt="text"
+          width="340"
+        />
+        <span class="content-box-three-text">
+          <h2>Reason #3</h2>
+          <h3>You get to capture Earth's most beautiful places and moments</h3>
+          <h4>
+            If you think about it, you are capturing a moment of the Earth's
+            history in the place you are shooting. You may take a photo that can
+            never be replicated. Each day is unique; not only do you get to
+            experience these beautiful places, you also have ownership of that
+            historical piece of art.
+          </h4>
+        </span>
+      </div>
+      <br />
+      <div class="content-box-four">
+        <span class="content-box-four-text">
+          <h2>Reason #4</h2>
+          <h3>
+            You'll never run out of places <br />
+            to see and capture
+          </h3>
+          <h4>
+            What makes it even more rewarding is that you can spend your entire
+            life photographing our planet and not even scratch the surface of
+            what you can see and shoot. It's the most beautiful dilemma you
+            could ever have: too many beautiful places, too little time.
+          </h4>
+        </span>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/419/original/IMG_8796.JPG?1646241670"
+          alt="text"
+          width="340"
+        />
+      </div>
+      <br />
+      <br />
+      <hr class="hr" />
+
+      <h2>My Travel Stories</h2>
+      <br />
+      <hr class="hr" />
+      <div>
+        <span class="content-box-five">
+          <a
+            href="http://nayobaez.com/mellieha-popeye-village/"
+            target="_blank"
+          >
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/510/original/MELLIEHA-POPEYE-VILLAGE-NAYO-FRONT2.jpeg?1646333741"
+              alt="popeyevillage"
+              width="240"
+            />
+          </a>
+          <div class="content-box-five-text">
+            <a
+              class="bloglink"
+              href="http://nayobaez.com/mellieha-popeye-village/"
+              target="_blank"
+              >Popeye Village
+            </a>
+          </div>
+        </span>
+        <span class="content-box-six">
+          <a href="http://nayobaez.com/paradise-bay/" target="_blank">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/514/original/MALTA_PARADISEBAY_NAYOFRONT.jpeg?1646335296"
+              alt="beachview"
+              width="240"
+            />
+          </a>
+          <div class="content-box-six-text">
+            <a
+              class="bloglink"
+              href="http://nayobaez.com/paradise-bay/"
+              target="_blank"
+              >Paradise Bay
+            </a>
+          </div>
+        </span>
+        <span class="content-box-seven">
+          <a href="http://nayobaez.com/ghajn-tuffieha/" target="_blank">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/512/original/GHAJN-TUFFIEHA-NAYO-FRONT1.jpeg?1646333782"
+              alt="natureview"
+              width="240"
+            />
+          </a>
+          <div class="content-box-seven-text">
+            <a
+              class="bloglink"
+              href="http://nayobaez.com/ghajn-tuffieha/"
+              target="_blank"
+              >Ghan Tuffieha
+            </a>
+          </div>
+        </span>
+      </div>
+      <br />
+      <br />
+
+      <div class="footer">
+        Get inspired by travel stories, discounts, inspiration and tips!
+        <br />
+        I won't spam you and you can unsubscribe at any time.
+        <button>JOIN THE ADVENTURE LETTER</button>
+        <span class="coded-by">
+          This page was coded by
+          <a class="footerlink" href="http://nayobaez.com/" target="_blank"
+            >Naomi Singh Báez Feliz</a
+          >
+        </span>
+        <div>
+          <a href="https://www.facebook.com/nayobaezfeliz" target="_blank">
+            <img
+              class="socials"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/557/original/4.png?1646419010"
+          /></a>
+          <a href="https://www.instagram.com/nayobaez/" target="_blank">
+            <img
+              class="socials"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/554/original/1.png?1646418983"
+          /></a>
+          <a href="https://twitter.com/nayobaez" target="_blank">
+            <img
+              class="socials"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/555/original/2.png?1646418990"
+          /></a>
+          <a href="http://www.linkedin.com/in/nayobaezfeliz" target="_blank">
+            <img
+              class="socials"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/556/original/3.png?1646418998"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <script>
+      function joinAdventure() {
+        let name = prompt("What Is Your Name?");
+        let travel = prompt("Do You Love Traveling?");
+        let photography = prompt("Do You Love Photography?");
+        let email = prompt("What Is Your E-mailaddress?");
+        alert(
+          "Thank You For Subscribing, " +
+            name +
+            "!" +
+            " Lets Share Travel Inspiration 💙 "
+        );
+      }
+      let button = document.querySelector("button");
+
+      button.addEventListener("click", joinAdventure);
+    </script>
+  </body>
+</html>
